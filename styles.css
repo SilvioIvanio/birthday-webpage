@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
-    background: linear-gradient(#a2d2ff, #EFB0C9);
+    background: linear-gradient(#F00057, #FA9E01);
     color: #ffffff;
 }
 
@@ -12,8 +12,9 @@ h1, h2, h3, h4, p {
 #bff-img {
     width: 150px;
     border-radius: 50%;
-    border: 6px solid #EFB0C9;
+    border: 6px solid #FA9E01;
     margin-bottom: 10px;
+    background-size: 500%;
 }
 
 #bday-age {
@@ -48,10 +49,6 @@ h1, h2, h3, h4, p {
     margin-top: 0;
 }
 
-#gift-img-cheers {
-    height: 200px;
-}
-
 .gift-img {
     margin: 20px auto;
     max-width: 400px;
@@ -63,19 +60,21 @@ h1, h2, h3, h4, p {
 }
 
 #gift-img-happy:hover {
-    background-image: url("images/happy.gif");
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnR1cWo5dW12eDhiZDVtMmVldW5rNXpjcXM5eHV4YXJxZm02dXc2MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7qE2VAxuXWeyvJIY/giphy.gif");
 }
 
 #gift-img-hot:hover {
-    background-image: url("images/hot.gif");
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGtiZ3Yyc3g5MmR4N3FibXhncTk0dnQ3bGgydWh0Zndrend0dDhtMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ckB5razpgN2rd4qTfe/giphy.gif");
 }
 
 #gift-img-genius:hover {
-    background-image: url("images/genius.gif");
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3b2p2angxb3A3MmRuYXdkY2Z5MGFoM2IwN3phbmV3bHhyanN4M3EzaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/rDbt7Ky9NAi1vKj7VP/giphy.gif");
+    background-size: cover;
 }
 
 #gift-img-badass:hover {
-    background-image: url("images/badass.gif");
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm42OXBoZHpocHNyaHl3cGptY2t2emFrM2t3ODY4djN6aWtjZXI1MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bUI7XZqMIQRxe/giphy.gif");
+    background-size: cover;
 }
 
 #gift-img-cheers:hover {
@@ -90,16 +89,15 @@ h1, h2, h3, h4, p {
 
 a {
     color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    font-style: italic;
+    font-size: 14px;
 }
 
-/* 
-Add the footer paragraph according to the design. 
-Configure the anchor tag to open the link in a new tab.
-Forgotten how to do it? Google it! 
-
-Link: 
-https://scrimba.com/learn/htmlandcss
-
-Text:
-Want to create your own Birthday GIFt site? Take this HTML & CSS course.
-*/
+@media (max-width: 760px) {
+   body {
+        margin: 20px;
+        padding: 20px;
+   }
+}
